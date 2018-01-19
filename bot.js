@@ -12,6 +12,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === 'ayy') {
+    	message.reply('lmao');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '&help') {
     	message.reply('There is no help sorry :<');
   	}
