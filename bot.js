@@ -12,12 +12,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '&kumiko') {
-    	message.channel.send(var randomArray = ['https://i.imgur.com/ymG5bnZ.jpg','https://www.picstatio.com/large/fe36b4/Kumiko-Oumae-Reina-Kousaka-anime-girls.jpg', 'I died for kumiko btw'];);
-  	}
-});
-
-client.on('message', message => {
     if (message.content === '&help') {
     	message.reply('There is no help sorry :<');
   	}
