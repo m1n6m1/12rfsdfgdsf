@@ -5,6 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+client.on('ready', () => {
+  bot.user.setGame('I <3 Nax')
+})
+
 client.on('message', message => {
     if (message.content === '&fuck') {
     	message.channel.send('https://78.media.tumblr.com/f1ace6e731fbfc240d89690911dd2d9f/tumblr_n8uqbrSpFZ1tp5eoko4_500.gif');
