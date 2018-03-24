@@ -57,6 +57,7 @@ const responseObject = {
 "hashiri tsudzukeru",
 "ranmaru": "Banana is PERFECT!",
 "capi": "https://gyazo.com/38d8417d1c1ef4cdabbd5b1c7bb72a45",
+"reiji": "yoroshiku machocho",
 };
 
 
