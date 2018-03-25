@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://discord.js.org"><img src="https://i.imgur.com/t7waHhJ.png" alt="Locure logo" /></a>
+    <a href="https://discord.js.org"><img src="https://i.imgur.com/G0tIl1P.jpg" alt="Locure logo" /></a>
   </p>
 </div>
 
