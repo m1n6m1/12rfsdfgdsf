@@ -3,7 +3,8 @@
 (https://img.shields.io/npm/v/npm.svg)
 (https://img.shields.io/npm/v/npm.svg)
 (https://img.shields.io/badge/style-flat--square-green.svg?longCache=true&Discord.JS=11.1.0)
+![asfasfasf]
 (https://img.shields.io/badge/style-flat--square-orange.svg?longCache=true&request=2.81.0)
 
-# Locure Discord Bot
+# Locure
 ekekkeke
