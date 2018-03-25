@@ -33,8 +33,6 @@ client.on("message", (message) => {
 
 const responseObject = {
   "ayy": "Ayy, lmao!",
-  "wat": "Say what?",
-  "lol": "roflmaotntpmp",
   "eba": "https://cdn.discordapp.com/attachments/427167187120160768/427174267210301451/magik.png",
   "nepe": "pene",
   "ur mom gay": "no you",
