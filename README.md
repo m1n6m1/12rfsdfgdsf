@@ -8,11 +8,11 @@
 ## About
 Locure is a simple discord bot that replies to some commands
 
-#CMDs
+## CMDs
 - &help
 - !fuck
 - ayy
 - lol
 - eba
 - nepe
-(...)
+- (...)
