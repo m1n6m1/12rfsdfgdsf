@@ -6,13 +6,15 @@
 </div>
 
 ## About
-Locure is a simple discord bot that replies to some commands
+Locure is a simple discord bot built with Discord.JS that does something.
 
-## CMDs
-- &help
-- !fuck
-- ayy
-- lol
-- eba
-- nepe
-- (...)
+# Prefix
+The prefix is **&** except for the non-prefix commands.
+
+# Commands
+- help
+- fuck
+- ping
+- say
+- purge (+number of msg you want to delete)
+- (+ non-prefix commands)

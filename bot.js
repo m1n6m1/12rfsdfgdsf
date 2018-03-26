@@ -1,34 +1,52 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const prefix = "!";
+const prefix = "&";
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setGame('Fucking Joel in the ass');
+    client.user.setGame('On està el meu cul?');
 });
 
-// Loop with itself fix
 client.on("message", async message => {
-  if(message.author.client) return;
+  if(message.author.bot) return;
+  
+  if(message.content.indexOf(config.prefix) !== 0) return;
+  
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  
+  if(command === "ping") {
+    const m = await message.channel.send("Ping?");
+    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+  }
+  
+  if(command === "say") {
+    const sayMessage = args.join(" ");
+    message.delete().catch(O_o=>{}); 
+    message.channel.send(sayMessage);
+  }
+  
+  if(command === "purge") {
+    const deleteCount = parseInt(args[0], 10);
+    
+    if(!deleteCount || deleteCount < 2 || deleteCount > 100)
+      return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
+
+    const fetched = await message.channel.fetchMessages({count: deleteCount});
+    message.channel.bulkDelete(fetched)
+      .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
+  }
+  if(command === "fuck") {
+    message.channel.send('https://78.media.tumblr.com/f1ace6e731fbfc240d89690911dd2d9f/tumblr_n8uqbrSpFZ1tp5eoko4_500.gif');
+  }
+  if(command === "help") {
+    message.channel.send('Uhm... HAVE THIS LINK :> https://github.com/m1n6m1/locure');
+  }
 });
-// Prefix required
-  // if(message.content.indexOf(config.prefix) !== 0) return;
-
-client.on('message', message => {
-    if (message.content.startsWith(prefix + 'fuck')) {
-    	message.channel.send('https://78.media.tumblr.com/f1ace6e731fbfc240d89690911dd2d9f/tumblr_n8uqbrSpFZ1tp5eoko4_500.gif');
-  	}
-});
 
 
-client.on('message', message => {
-    if (message.content === '&help') {
-    	message.reply('There is no help sorry :<');
-  	}
-});
-
-// No prefix responds
+// Non-prefix responds
 client.on("message", (message) => {
   if(responseObject[message.content]) {
     message.channel.send(responseObject[message.content]);
