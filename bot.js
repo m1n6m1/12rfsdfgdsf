@@ -39,7 +39,7 @@ const responseObject = {
   "ayy": "Ayy, lmao!",
   "eba": "https://cdn.discordapp.com/attachments/427167187120160768/427174267210301451/magik.png",
   "nepe": "pene",
-  "ur mom gay": "no u",
+  "ur mom gay": "no you",
   "no u": "no u",
   "kys": "https://imgur.com/TEqfNbQ",
   "best boi": 'sesil',
