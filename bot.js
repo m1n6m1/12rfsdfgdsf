@@ -68,13 +68,7 @@ const responseObject = {
 	"hitler" : "mechahitler",
 	"stalin" : "mechastalin",
 	"asuka": "puta",
-  "infierno": "dakara hashirou ze hashirou ze" +
-  "kikasete　omae no koe" +
-  "dare yori mo subete o fukaku fukaku kanjitai" +
-  "tomaranai tomaranai" +
-  "hitori ja nai" +
-  "(Get Our Life!) omae no omoi 　 (Get Our Dream!) mune ni daite" +
-  "hashiri tsudzukeru",
+  "infierno": "dakara hashirou ze hashirou ze\nkikasete　omae no koe\ndare yori mo subete o fukaku fukaku kanjitai\ntomaranai tomaranai\nhitori ja nai\n(Get Our Life!) omae no omoi 　 (Get Our Dream!) mune ni daite\nhashiri tsudzukeru",
   "ranmaru": "Banana is PERFECT!",
   "capi": "https://gyazo.com/38d8417d1c1ef4cdabbd5b1c7bb72a45",
   "reiji": "yoroshiku machocho",
