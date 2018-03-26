@@ -7,9 +7,16 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-//client.on('ready', () => {
-//  bot.user.setGame('I <3 Nax')
-//})
+// Loop with itself fix
+client.on("message", async message => {
+  if(message.author.bot) return;
+  
+// Prefix required
+  // if(message.content.indexOf(config.prefix) !== 0) return;
+
+  client.on('ready', () => {
+    bot.user.setGame('Fucking Joel in the ass')
+  })
 
 client.on('message', message => {
     if (message.content.startsWith(prefix + 'fuck')) {
@@ -37,7 +44,7 @@ const responseObject = {
   "lol": "roflmaotntpmp",
   "eba": "https://cdn.discordapp.com/attachments/427167187120160768/427174267210301451/magik.png",
   "nepe": "pene",
-  "ur mom gay": "no you",
+  "ur mom gay": "no u",
   "no u": "no u",
   "kys": "https://imgur.com/TEqfNbQ",
   "best boi": 'sesil',
@@ -60,7 +67,6 @@ const responseObject = {
   "reiji": "yoroshiku machocho",
   "a": "aaaaaaaaaaaaaaaa",
   };
-
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
