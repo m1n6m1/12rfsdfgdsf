@@ -5,18 +5,15 @@ const prefix = "!";
 
 client.on('ready', () => {
     console.log('I am ready!');
+    client.user.setGame('Fucking Joel in the ass');
 });
 
 // Loop with itself fix
 client.on("message", async message => {
   if(message.author.client) return;
-  
+});
 // Prefix required
   // if(message.content.indexOf(config.prefix) !== 0) return;
-
-  client.on('ready', () => {
-    client.user.setGame('Fucking Joel in the ass')
-  })
 
 client.on('message', message => {
     if (message.content.startsWith(prefix + 'fuck')) {
@@ -67,4 +64,4 @@ const responseObject = {
   };
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);})
+client.login(process.env.BOT_TOKEN);
