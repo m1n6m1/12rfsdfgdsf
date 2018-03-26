@@ -9,13 +9,13 @@ client.on('ready', () => {
 
 // Loop with itself fix
 client.on("message", async message => {
-  if(message.author.bot) return;
+  if(message.author.client) return;
   
 // Prefix required
   // if(message.content.indexOf(config.prefix) !== 0) return;
 
   client.on('ready', () => {
-    bot.user.setGame('Fucking Joel in the ass')
+    client.user.setGame('Fucking Joel in the ass')
   })
 
 client.on('message', message => {
