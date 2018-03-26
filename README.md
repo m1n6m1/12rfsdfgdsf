@@ -5,13 +5,13 @@
   </p>
 </div>
 
-## About
+# About
 Locure is a simple discord bot built with Discord.JS that does something.
 
-# Prefix
+## Prefix
 The prefix is **&** except for the non-prefix commands.
 
-# Commands
+## Commands
 - help
 - fuck
 - ping
